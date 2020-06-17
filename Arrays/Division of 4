@@ -1,0 +1,11 @@
+https://codezen.codingninjas.com/practice/465/699/division-of-4
+
+
+void change(int *arr,int l)
+{
+  for (int i=0;i<l;i++)
+  {   arr[i]=arr[i]/4;
+      if(arr[i]==0)
+          arr[i]=-1;
+  }
+}

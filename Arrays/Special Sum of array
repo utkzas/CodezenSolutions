@@ -1,0 +1,20 @@
+https://codezen.codingninjas.com/practice/465/96/special-sum-of-array
+
+int sum(int *arr,int size)
+{ int total;
+  for(int i=0;i<size;i++)
+  {
+      total=total+arr[i];
+
+ int n=0;
+ if(total>=10)
+  { n=total%10;
+   total=total/10;
+   n=n+total;
+   total=n;
+}
+  }
+  return total;
+}
+
+I beileve there is a problem with this question.

@@ -1,0 +1,17 @@
+https://codezen.codingninjas.com/practice/465/25/duplicate-in-array
+
+
+int DuplicateNumber(int arr[], int size){
+    /* Don't write main().
+     * Don't read input, it is passed as function argument.
+     * Return output and don't print it.
+     * Taking input and printing output is handled automatically.
+     */
+    int sum=0, sumN=0;
+    for(int i=0;i<size;i++)
+        sum=sum+arr[i];
+        
+        sumN=((size-1)*(size-2))/2;
+    return sum-sumN;
+    
+}

@@ -1,0 +1,22 @@
+https://codezen.codingninjas.com/practice/465/31/array-equilibrium-index
+
+int equilibrium(int arr[], int n) {
+	// Write your code here
+   int sum=0;
+   int leftsum=0;
+    
+    for(int i=0;i<n;i++)
+    sum=sum+arr[i];
+    for(int i=0;i<n;i++)
+    {
+        sum=sum-arr[i];
+                if(sum==leftsum)
+        {
+            return i;
+        }
+        leftsum=leftsum+arr[i];
+    }
+return -1;
+} 
+
+  
